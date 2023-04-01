@@ -48,9 +48,9 @@ const Slice = ({ nextPage }) => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <div className="audio">
+      {/* <div className="audio">
         <Audio />
-      </div>
+      </div> */}
     </div>
   );
 };
