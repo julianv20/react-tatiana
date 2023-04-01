@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import reactAudioPlayer from 'react-audio-player';
+
 import { Audio } from './Audio';
 
 const Slice = ({ nextPage }) => {
