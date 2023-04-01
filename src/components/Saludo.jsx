@@ -5,12 +5,14 @@ export const Saludo = ({ nextPage, error }) => {
   return (
     <div className="contenedor">
       <div>
-        <h1>Saludo</h1>
+        <h1>Mi amor</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-          odio doloremque perferendis deleniti! Eum impedit ipsum eveniet
-          accusantium blanditiis mollitia molestias, minima consequuntur et
-          expedita. Ut eligendi accusamus facere tempore.
+          Por donde empezar, hemos vivido tantas cosas; tanto felices como
+          tristes, hemos tenido discusiones pero es maravilloso que siempre hay
+          un día nuevo en el que llega ese mensaje de “¿buenos días mi amor,
+          como amaneciste? ” Espero que ese simple pero tan especial mensaje
+          nunca deje de llegar. Si quieres continuar escribe el año en el que
+          nos conocimos y dale al corazon.
         </p>
       </div>
       <Formulario nextPage={nextPage} /> {error != '' ? error : ''}

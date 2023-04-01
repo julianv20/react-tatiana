@@ -32,8 +32,8 @@ const Slice = ({ nextPage }) => {
   };
 
   return (
-    <div>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+    <div className="sliderContent">
+      <Carousel activeIndex={index} onSelect={handleSelect} className="slider">
         {images.map((image, i) => (
           <Carousel.Item key={i}>
             <img className="d-block w-100" src={image.src} alt={image.alt} />
@@ -50,9 +50,10 @@ const Slice = ({ nextPage }) => {
       <div className="audio">
         {/* <Audio /> */}
         <iframe
+          className="video"
           width="320"
           height="260"
-          src="https://www.youtube.com/embed/_tNVEhSelH0?autoplay=1"
+          src="https://www.youtube.com/embed/yWkQbrfSvfs?autoplay=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
