@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,500&display=swap');
+body {
+  /* background-color: #ce6782;
+   */
+  /* background: linear-gradient(to bottom, #c22c4a, #8f1010, #410813); */
+  /* background: linear-gradient(to bottom, #ff0032, #cd0404, #6b0317); */
+  background-image: radial-gradient(
+    circle at 43.84% -20.44%,
+    #f7558f 0,
+    #df4c8e 16.67%,
+    #c34389 33.33%,
+    #a53a80 50%,
+    #873175 66.67%,
+    #6d2a6a 83.33%,
+    #562561 100%
+  );
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contenedor {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+  height: 340px;
+  -webkit-box-shadow: -2px 10px 53px -10px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -2px 10px 53px -10px rgba(0, 0, 0, 0.59);
+  box-shadow: -2px 10px 53px -10px rgba(0, 0, 0, 0.59);
+}
+
+.contenedor:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: -2px 10px 53px -10px #fdd3d2;
+  -moz-box-shadow: -2px 10px 53px -10px #fdd3d2;
+  box-shadow: -2px 10px 53px -10px #fdd3d2;
+  margin: 40px;
+}
+
+.contenedor h1 {
+  color: #011f26;
+  text-align: center;
+}
+
+.inputSiguiente {
+  width: 100%;
+  outline: none;
+  margin-top: 10px;
+}
+.boton {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.corazon {
+  display: inline-block;
+  position: relative;
+  color: red;
+  font-size: 50px;
+}
+
+.corazon:hover {
+  /* transform: scale(1.1, 1.1); */
+  animation: latido 0.6s ease-in-out infinite;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fas.fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #f44336;
+}
+
+.iconSlice {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.audio {
+  text-align: center;
+  margin-top: 10px;
+}
