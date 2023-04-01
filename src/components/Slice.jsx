@@ -48,7 +48,16 @@ const Slice = ({ nextPage }) => {
         ))}
       </Carousel>
       <div className="audio">
-        <Audio />
+        {/* <Audio /> */}
+        <iframe
+          width="320"
+          height="260"
+          src="https://www.youtube.com/embed/_tNVEhSelH0?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );
